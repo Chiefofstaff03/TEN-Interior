@@ -1,0 +1,203 @@
+.footer-div {
+  width: 100%;
+  background-color: #222122;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e2c48e;
+  transition: width 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+.footer-nav a:hover {
+  color: #e2c48e;
+  transform: translateY(-2px);
+}
+
+.footer-tagline {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-tagline h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-style: italic;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-tagline h2 span {
+  color: #e2c48e;
+  animation: blinkLoop 2s ease-in-out infinite;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.footer-tagline h2 span:nth-child(1) { animation-delay: 0s; }
+.footer-tagline h2 span:nth-child(2) { animation-delay: 0.05s; }
+.footer-tagline h2 span:nth-child(3) { animation-delay: 0.1s; }
+.footer-tagline h2 span:nth-child(4) { animation-delay: 0.2s; }
+.footer-tagline h2 span:nth-child(5) { animation-delay: 0.3s; }
+.footer-tagline h2 span:nth-child(6) { animation-delay: 0.4s; }
+.footer-tagline h2 span:nth-child(7) { animation-delay: 0.5s; }
+.footer-tagline h2 span:nth-child(8) { animation-delay: 0.6s; }
+.footer-tagline h2 span:nth-child(9) { animation-delay: 0.7s; }
+.footer-tagline h2 span:nth-child(10) { animation-delay: 0.8s; }
+.footer-tagline h2 span:nth-child(11) { animation-delay: 0.9s; }
+.footer-tagline h2 span:nth-child(12) { animation-delay: 1.05s; }
+.footer-tagline h2 span:nth-child(13) { animation-delay: 1.1s; }
+.footer-tagline h2 span:nth-child(14) { animation-delay: 1.2s; }
+.footer-tagline h2 span:nth-child(15) { animation-delay: 1.3s; }
+.footer-tagline h2 span:nth-child(16) { animation-delay: 1.4s; }
+.footer-tagline h2 span:nth-child(17) { animation-delay: 1.5s; }
+
+@keyframes blinkLoop {
+  0%, 100% { opacity: 0.2; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.footer-tagline .spaces {
+  font-weight: 300;
+  letter-spacing: 14px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #e0dfd8;
+  margin-top: 20px;
+}
+
+.credits {
+  font-size: 16px;
+  color: #e0dfd8;
+  margin-top: 5px;
+}
+
+.credits a {
+  color: #daa14c;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.credits a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-div {
+    padding: 40px 0 20px;
+  }
+
+  .footer-nav {
+    margin-bottom: 30px;
+  }
+
+  .footer-nav a {
+    margin: 5px 10px;
+  }
+
+  .footer-tagline h2 {
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-tagline .spaces {
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 0 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer-nav a {
+    white-space: nowrap;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    font-size: 14px;
+  }
+
+  .footer-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .footer-content {
+    transform: scale(0.95);
+    transform-origin: center;
+    width: 100%;
+  }
+
+  .footer-tagline h2 {
+    font-size: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footer-tagline .spaces {
+    font-size: 16px;
+    letter-spacing: 12px;
+  }
+
+  .footer-div {
+    padding: 40px 0 20px;
+  }
+
+  .copyright,
+  .credits {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}

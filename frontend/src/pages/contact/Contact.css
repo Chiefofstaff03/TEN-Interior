@@ -1,0 +1,310 @@
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif;
+}
+
+body {
+  background-color: #f5f3ef;
+  color: #333;
+}
+
+/* FADE-IN ON PAGE LOAD */
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-out;
+}
+
+/* HEADER */
+.contact-header {
+  background-color: transparent;
+  padding: 30px 50px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.contact-header .logo {
+  font-size: 1.5rem;
+  color: #151414;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.subheading {
+  font-size: 0.8rem;
+  color: #151414;
+  letter-spacing: 3px;
+}
+
+/* CONTENT */
+.contact-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+.contact-info-column {
+  width: 40%;
+  padding: 180px 60px 60px;
+  background-image: url("../../assets/Image/image.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.contact-info-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.contact-info-column > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form-container {
+  width: 60%;
+  padding: 100px 60px;
+  background-color: #fff;
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* TEXT */
+.contact-section-title {
+  font-size: 1.5rem;
+  color: #fdb94c;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  }
+
+.contact-heading {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.contact-description {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-description a {
+  color: #1b1b1a;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+/* OFFICE HOURS */
+.office-hours {
+  margin-top: 40px;
+}
+
+.office-hours h3 {
+  font-size: 1.3rem;
+  color: #afc46c;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.office-hours p {
+  font-size: 1.1rem;
+}
+
+/* FORM */
+.form-heading {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #695c3e;
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #695c3e;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #695c3e;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  background-color: transparent;
+  border: 1px solid #695c3e;
+  color: #695c3e;
+  padding: 10px 25px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.submit-btn:hover {
+  background-color: #695c3e;
+  color: #fff;
+}
+
+/* FAQ SECTION */
+.faq-section {
+  padding: 80px 60px;
+  background-color: #f5f3ef;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.faq-heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #695c3e;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.faq-questions {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #d3c7ab;
+  padding: 20px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #695c3e;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #b89e77;
+}
+
+.plus-icon {
+  font-size: 1.2rem;
+  color: #695c3e;
+  transition: transform 0.3s ease;
+}
+
+/* FAQ ANSWER ANIMATION */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding-left: 10px;
+  font-size: 0.85rem;
+  color: #695c3e;
+  line-height: 1.6;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info-column,
+  .contact-form-container {
+    width: 100%;
+    padding: 80px 30px;
+  }
+
+  .contact-info-column {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header {
+    padding: 20px;
+  }
+
+  .contact-heading,
+  .form-heading,
+  .faq-heading {
+    font-size: 1.5rem;
+  }
+
+  .faq-section {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-column,
+  .contact-form-container {
+    padding: 60px 20px;
+  }
+
+  .contact-heading,
+  .form-heading,
+  .faq-heading {
+    font-size: 1.3rem;
+  }
+}
