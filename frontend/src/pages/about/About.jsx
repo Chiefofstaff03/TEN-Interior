@@ -9,6 +9,7 @@ import review2Img from "../../assets/Image/review2.jpg";
 import review3Img from "../../assets/Image/review3.jpg";
 import review11Img from "../../assets/Image/review11.jpg";
 import land1Img from "../../assets/Image/land1.jpg";
+
 const testimonialsData = [
   {
     name: "Rohit Mehta",
