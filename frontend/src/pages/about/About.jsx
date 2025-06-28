@@ -2,12 +2,13 @@
 
 import React from "react";
 import "./About.css";
+import bridgestoneImg from "../../assets/Image/bridgestone.jpg";
 import bedroomImg from "../../assets/Image/bedroom.jpg";
 import homeStagingImg from "../../assets/Image/homestagingg.jpg";
 import review1Img from "../../assets/Image/review1.jpeg";
 import review2Img from "../../assets/Image/review2.jpg";
 import review3Img from "../../assets/Image/review3.jpg";
-import review11Img from "../../assets/Image/review 11.jpg";
+import review11Img from "../../assets/Image/review11.jpg";
 import land1Img from "../../assets/Image/land1.jpg";
 const testimonialsData = [
   {
@@ -37,6 +38,10 @@ const About = () => {
   return (
     <div className='about-container'>
       <section className='header'>
+       <section
+        className="header"
+        style={{ backgroundImage: `url(${bridgestoneImg})` }}
+      ></section>
         <h2 className='banner'>Ten Interior Designs</h2>
         <div className='header-content'>
           <h1>

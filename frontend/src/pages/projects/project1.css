@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url("../../assets/image/bridgestone.jpg");
+  /* background-image: url("../../assets/Image/bridgestone.jpg"); */
 
   background-size: cover;
   background-position: center;
@@ -106,7 +108,6 @@
   .image5 {
     display: none;
   }
-  
 }
 @media (max-width: 768px) {
   .paragraph {
@@ -126,23 +127,22 @@
 @media (max-width: 480px) {
   .gallary {
     display: flex;
-
   }
   .gallary img {
     height: 100px;
     width: 150px;
   }
-.appoinment{
-  padding: 20px;
-}
-.text {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: white;
-}
-.btn{
-  padding: 5px 6px;
-  font-size: 0.5rem;  
-   margin-right: 100px;
-}
+  .appoinment {
+    padding: 20px;
+  }
+  .text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+  .btn {
+    padding: 5px 6px;
+    font-size: 0.5rem;
+    margin-right: 100px;
+  }
 }
