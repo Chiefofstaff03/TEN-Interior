@@ -1,7 +1,9 @@
+/** @format */
+
 import React from "react";
 import "./About.css";
 import bedroomImg from "../../assets/Image/bedroom.jpg";
-import homeStagingImg from "../../assets/Image/home stagingg.jpg";
+import homeStagingImg from "../../assets/Image/homestagingg.jpg";
 import review1Img from "../../assets/Image/review1.jpeg";
 import review2Img from "../../assets/Image/review2.jpg";
 import review3Img from "../../assets/Image/review3.jpg";
@@ -33,10 +35,10 @@ const testimonialsData = [
 
 const About = () => {
   return (
-    <div className="about-container">
-      <section className="header">
-        <h2 className="banner">Ten Interior Designs</h2>
-        <div className="header-content">
+    <div className='about-container'>
+      <section className='header'>
+        <h2 className='banner'>Ten Interior Designs</h2>
+        <div className='header-content'>
           <h1>
             About <span>Ten Design</span>
           </h1>
@@ -46,7 +48,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="description">
+      <section className='description'>
         <h4>The Foundation of Our Ethos</h4>
         <h1>
           Every home is a canvas of your essence, rich with personality and
@@ -61,65 +63,65 @@ const About = () => {
           refresh to a full home transformation, we design to elevate how you
           connect with your surroundings daily.
         </p>
-        <div className="imageContainer">
+        <div className='imageContainer'>
           <img
             src={bedroomImg}
-            alt="Bedroom design"
-            className="backgroundImage"
+            alt='Bedroom design'
+            className='backgroundImage'
             width={500}
             height={600}
           />
-          <div className="overlayImageWrapper">
+          <div className='overlayImageWrapper'>
             <img
               src={homeStagingImg}
-              alt="Home staging"
-              className="overlayImage"
+              alt='Home staging'
+              className='overlayImage'
               width={300}
               height={400}
             />
           </div>
         </div>
       </section>
-      <section className="gallerySection">
+      <section className='gallerySection'>
         <h1>
           Interior Design <span>Style Influences</span>
         </h1>
-        <div className="galleryGrid">
-          <div className="firstcol">
+        <div className='galleryGrid'>
+          <div className='firstcol'>
             <img
               src={review1Img}
-              alt="Classic Art"
-              className="item item1"
+              alt='Classic Art'
+              className='item item1'
               height={300}
               width={200}
             />
             <img
               src={review3Img}
-              alt="Natural Environment"
-              className="item item2"
+              alt='Natural Environment'
+              className='item item2'
               height={300}
               width={200}
             />
           </div>
           <img
             src={review2Img}
-            alt="Warm Palette"
-            className="item item3"
+            alt='Warm Palette'
+            className='item item3'
             height={400}
             width={300}
           />
-          <div className="secondcol">
+          <div className='secondcol'>
             <img
               src={review11Img}
-              alt="Layered Textures"
-              className="item item4"
+              alt='Layered Textures'
+              className='item item4'
               height={300}
               width={200}
             />
             <img
               src={land1Img}
-              alt="Furnishings"
-              className="item item5"
+              alt='Furnishings'
+              className='item item5'
               height={300}
               width={200}
             />
@@ -127,26 +129,26 @@ const About = () => {
         </div>
       </section>
 
-      <section id="testimonials">
-        <div className="container">
+      <section id='testimonials'>
+        <div className='container'>
           <h2>What Our Users Say</h2>
-          <div className="testimonials-grid">
+          <div className='testimonials-grid'>
             {testimonialsData.map((testimonial, index) => (
-              <div key={index} className="card">
-                <div className="card-content">
-                  <div className="user-info">
+              <div key={index} className='card'>
+                <div className='card-content'>
+                  <div className='user-info'>
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="user-image"
+                      className='user-image'
                     />
-                    <div className="user-details">
-                      <div className="user-name">{testimonial.name}</div>
-                      <div className="user-role">{testimonial.role}</div>
+                    <div className='user-details'>
+                      <div className='user-name'>{testimonial.name}</div>
+                      <div className='user-role'>{testimonial.role}</div>
                     </div>
                   </div>
-                  <div className="rating">★ ★ ★ ★ ★</div>
-                  <p className="quote">"{testimonial.quote}"</p>
+                  <div className='rating'>★ ★ ★ ★ ★</div>
+                  <p className='quote'>"{testimonial.quote}"</p>
                 </div>
               </div>
             ))}
