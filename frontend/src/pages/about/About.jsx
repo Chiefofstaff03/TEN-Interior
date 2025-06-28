@@ -37,11 +37,10 @@ const testimonialsData = [
 const About = () => {
   return (
     <div className='about-container'>
-      <section className='header'>
-       <section
-        className="header"
+      <section
+        className='header'
         style={{ backgroundImage: `url(${bridgestoneImg})` }}
-      ></section>
+      >
         <h2 className='banner'>Ten Interior Designs</h2>
         <div className='header-content'>
           <h1>
