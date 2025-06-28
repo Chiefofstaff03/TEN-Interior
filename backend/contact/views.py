@@ -30,7 +30,7 @@ def contact_form(request):
             subject=f"New Contact Form Submission from {full_name}",
             message=f"Name: {full_name}\nEmail: {email}\nPhone: {phone}\n\nMessage:\n{message}",
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=["vemulapalli.289@gmail.com"],
+            recipient_list=["tech@entrepreneurshipnetwork.net"],
             fail_silently=False,
         )
     except Exception as e:
