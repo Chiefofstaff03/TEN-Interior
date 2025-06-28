@@ -1,5 +1,4 @@
 /** @format */
-
 import React from "react";
 import "./About.css";
 import bridgestoneImg from "../../assets/Image/bridgestone.jpg";
