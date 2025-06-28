@@ -1,23 +1,25 @@
+/** @format */
+
 import React from "react";
 import "./project5.css";
 import image from "/src/assets/Image/land3.jpg";
 import image2 from "/src/assets/Image/land2.jpg";
 import image3 from "/src/assets/Image/hm1.jpg";
 import image4 from "/src/assets/Screen1.png";
-import image5 from "/src/assets/Image/review 11.jpg";
+import image5 from "/src/assets/Image/review11.jpg";
 import image6 from "/src/assets/Image/premium.jpg";
 import logo from "/src/assets/Image/logo.png";
 const Project5 = () => {
   return (
     <div>
-      <section className="header5">
-        <h2 className="banner">Ten Interior Designs</h2>
-        <div className="header-content">
+      <section className='header5'>
+        <h2 className='banner'>Ten Interior Designs</h2>
+        <div className='header-content'>
           <h1>Craighleith</h1>
           <p>Home Renovation & Interior Style</p>
         </div>
       </section>
-      <section className="description">
+      <section className='description'>
         <h4>Craighleith</h4>
         <h3>Project Location- Mohali, India</h3>
         <p>
@@ -36,32 +38,32 @@ const Project5 = () => {
           modern and rooted. Welcome to Willow Lane – a home curated for
           comfort, connection, and quiet luxury.
         </p>
-        <span className="photographer">Photography- john doe</span>
-        <a href="https://ten-interior.vercel.app/portfolio">
-          <button className="button">Back to Portfolio </button>{" "}
+        <span className='photographer'>Photography- john doe</span>
+        <a href='https://ten-interior.vercel.app/portfolio'>
+          <button className='button'>Back to Portfolio </button>{" "}
         </a>
       </section>
-      <section className="picture5">
-        <div className="text5">
+      <section className='picture5'>
+        <div className='text5'>
           <h4>Projects Highlight</h4>
         </div>
-        <div className="gallary5">
-          <img src={image} alt="" height={500} width={400} />
-          <img src={image2} alt="" height={500} width={400} />
-          <img src={image3} alt="" height={500} width={400} />
-          <img src={image4} alt="" height={500} width={400} />
-          <img src={image5} alt="" height={500} width={400} />
-          <img src={image6} alt="" height={500} width={400} />
+        <div className='gallary5'>
+          <img src={image} alt='' height={500} width={400} />
+          <img src={image2} alt='' height={500} width={400} />
+          <img src={image3} alt='' height={500} width={400} />
+          <img src={image4} alt='' height={500} width={400} />
+          <img src={image5} alt='' height={500} width={400} />
+          <img src={image6} alt='' height={500} width={400} />
         </div>
       </section>
-      <section className="appoinment5">
-        <div className="text2">Ready To Work Together?</div>
-        <button className="btn2">SCHEDULE AN APPOINMENT</button>
+      <section className='appoinment5'>
+        <div className='text2'>Ready To Work Together?</div>
+        <button className='btn2'>SCHEDULE AN APPOINMENT</button>
       </section>
-      <section className="interior-gallary">
-        <div className="para5">
-          <div className="logo">
-            <img src={logo} alt="" height={50} width={50} />
+      <section className='interior-gallary'>
+        <div className='para5'>
+          <div className='logo'>
+            <img src={logo} alt='' height={50} width={50} />
           </div>
           <p>
             A Mohali-based boutique interior design studio crafting personalized
@@ -74,12 +76,12 @@ const Project5 = () => {
             with passion and precision.
           </p>
         </div>
-        <div className="images5">
-          <img src={image} alt="" className="image" />
-          <img src={image2} alt="" className="image2" />
-          <img src={image3} alt="" className="image3" />
-          <img src={image4} alt=""  className="image4"/>
-          <img src={image5} alt="" className="image5" />
+        <div className='images5'>
+          <img src={image} alt='' className='image' />
+          <img src={image2} alt='' className='image2' />
+          <img src={image3} alt='' className='image3' />
+          <img src={image4} alt='' className='image4' />
+          <img src={image5} alt='' className='image5' />
         </div>
       </section>
     </div>

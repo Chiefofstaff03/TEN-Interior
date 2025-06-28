@@ -6,7 +6,7 @@ import image from "/src/assets/Image/land3.jpg";
 import image2 from "/src/assets/Image/land2.jpg";
 import image3 from "/src/assets/Image/land1.jpg";
 import image4 from "/src/assets/Screen1.png";
-import image5 from "/src/assets/Image/review 11.jpg";
+import image5 from "/src/assets/Image/review11.jpg";
 import logo from "/src/assets/Image/logo.png";
 
 const Project2 = () => {
